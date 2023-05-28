@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+
+  <title>Encuentro Latinoamericano de Investigación y Comunicación</title>
+</head>
+
+<body>
+  <!-- HEADER (BARRA SUPERIOR)-->
+  <header>
+
+  </header>
+
+  <!-- PORTADA (PRIMERA PANTALLA)-->
+  <section id="portada">
+    <div class="portada-conteiner">
+      <h5>Anfibia</h5>
+      <h3>Del 19 al 21 de Abril</h3>
+      <h1>Encuentro <br>latinoamericano de <br> <mark>comunicación creativa</mark> </h1>
+      <h4>Revista Anfibia te invita a explorar las narrativas más relevantes de nuestra región en un espacio para
+        <b>conectar y aprender</b>
+      </h4>
+      <button>QUIERO PARTICIPAR</button>
+
+
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN 1 (PRIMERA PANTALLA LUEGO DE LA PORTADA)-->
+  <section id="seccion-1">
+
+    <div class="columna-1">
+      <h2>Sé parte del cambio</h2>
+      <h4>El Encuentro Latinoamericano de Investigación y Comunicación reúne a diversos referentes del ámbito con el
+        objetivo de promover el desarrollo de una comunicación más crítica, inclusiva y comprometida con la defensa de
+        los derechos y las democracias en el continente.</h4>
+    </div>
+    <div class="columna-2">
+      <img src="assets/img/image-01.webp" />
+    </div>
+
+  </section>
+
+
+
+  <!-- SECCIÓN 2 (SEGUNDA PANTALLA LUEGO DE LA PORTADA)-->
+  <section id="seccion-2">
+    <h2>Actividades para todxs</h2>
+    <h4>Durante el encuentro, se llevarán a cabo actividades destinadas a fomentar la participación activa y el
+      fortalecimiento de las redes de colaboración.</h4>
+    <div class="cards-argumentos">
+      <div class="card-1">
+        
+        <div class="card-contenido">
+          <h6>Conferencias</h6>
+
+        </div>
+      </div>
+
+      <div class="card-2">
+        
+        <div class="card-contenido">
+          <h6>Charlas abiertas</h6>
+
+        </div>
+      </div>
+
+      <div class="card-3">
+       
+        <div class="card-contenido">
+          <h6>Talleres y capacitaciones</h6>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN 3 (TERCERA PANTALLA LUEGO DE LA PORTADA)-->
+  <section id="seccion-3">
+
+  </section>
+
+  <!-- SECCIÓN FORM  (CUARTA PANTALLA LUEGO DE LA PORTADA)-->
+  <section class="seccion-form" id="seccion-form-1">
+    <div class="gif-form">
+      
+    </div>
+    <div class="caja-form" id="caja">
+      <h2>Mantenete al tanto de cada detalle</h2>
+      <h4>Dejanos tu e-mail y recibí el <mark>boletín del evento</mark> con toda la información exclusiva que necesitas
+      </h4>
+      <form id="formulario-principal" action="#">
+        <div class="form-row">
+          <input required type="text" name="nombre" id="nombre" placeholder="Nombre" />
+        </div>
+
+        <div class="form-row">
+          <input type="email" name="email" id="email" placeholder="Correo electrónico" />
+        </div>
+        <div class="form-row">
+          <input type="submit" value="ENVIAR" id="boton-form" />
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="primera-fila">
+      <h3>Seguinos en nuestras redes:</h3>
+      <nav>
+        <ul>
+          <li><img src="assets/img/icons8-twitter.svg"></li>
+          <li><img src="assets/img/icons8-facebook.svg" ></li>
+          <li><img src="assets/img/icons8-instagram (1).svg" ></li>
+          <li><img src="assets/img/icons8-youtube-play.svg" alt="">
+          </li>
+
+          
+        </ul>
+      </nav>
+      
+      
+      
+    </div>
+    <div class="segunda-fila">
+      <h6>UNSAM Campus Miguelete - 25 de Mayo y Francia (CP 1650) - San Martín, Prov. de Buenos Aires - Argentina - ISSN
+        2344-9365</h6>
+
+    </div>
+
+  </footer>
+
+  
+  <div class="popup-contenedor oculto feedback">
+    <div class="popup">
+      <div class="cerrar">X</div>
+      <h1>Listo <span id="dato-nombre">nombre</span>! 
+        El boletín ya está en camino a tu casilla de correo</h1>
+      <h4>No olvides revisar también tu casilla de spam</h4>
+    </div>
+  </div>
+</body>
+
+</html>

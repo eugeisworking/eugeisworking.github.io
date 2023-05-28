@@ -1,0 +1,490 @@
+/********
+Paso 0: Definimos tipografías y propiedades básicas del documento
+
+********/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("../assets/fonts/Tungsten-Bold/Tungsten-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BonaNova";
+  src: url("../assets/fonts/Bona_Nova/BonaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* definimos el tamaño de tipografía base y la familia tipográfica por defecto */
+html,
+body {
+  font-size: 10px;
+  background-color: #F2E694;
+  
+}
+
+* {
+  box-sizing: border-box !important;
+  /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
+}
+
+/* la familia tipográfica por defecto para los títulos */
+h1,
+h2 {
+  font-family: "BonaNova";
+}
+
+h3 {
+  font-family: "Montserrat-Bold";
+
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/********
+Paso 1: Definimos la estructura básica
+
+********/
+/* Barra de navegación superior */
+header {}
+
+/* Cada sección de la landing */
+section {
+  
+  padding: 3rem 12rem;
+
+}
+
+/* Únicamente la portada tendrá un alto excepcional, para que ocupe toda la pantalla:
+calculamos el total del alto de la pantalla menos lo que mide el header */
+section#portada {
+  height: 1080px;
+  background-image: url("../assets/img/portada-01.webp");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+}
+
+section#portada h5 {
+  font-family: Tungsten;
+  color: #fff;
+  text-align: left;
+}
+
+section#portada mark {
+  background-color: #EB7166;
+}
+
+section#portada button {
+  background-color: #6653FF;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+  border: hidden;
+  margin-top: 4rem;
+
+}
+
+
+
+/* Únicamente las secciones que ocupen posiciones impares dentro de su contenedor, tendrán otro fondo.
+Esto sirve para que nos quede una sección de un color, luego la siguiente de otro, luego la siguiente igual a la primera
+y así suscesivamente */
+section:nth-child(odd) {}
+
+/* Únicamente las secciones que lleven la clase seccion-form serán menos altas */
+
+
+footer {}
+
+/********
+Paso 2: Trabajamos nuestro header
+
+********/
+header nav {}
+
+.logo-container {}
+
+header nav img {}
+
+header nav ul {}
+
+header nav ul li {}
+
+header nav ul li button {}
+
+/********
+Paso 3: Trabajamos nuestra portada
+
+********/
+section#portada {}
+
+section#portada h1,
+h4 {}
+
+div.portada-container {}
+
+div.portada-izquierda {}
+
+div.portada-izquierda .separador {}
+
+div.portada-izquierda .portada-miniform {}
+
+div.portada-izquierda .portada-miniform input[type="submit"] {}
+
+div.portada-izquierda .portada-miniform input[type="email"] {}
+
+div.portada-derecha {}
+
+div.portada-derecha img {}
+
+/********
+Paso 4: Trabajamos nuestra primera sección
+
+********/
+section#seccion-1 {
+  display: flex;
+
+}
+
+section#seccion-1 h2 {
+  color: #EB7166;
+
+}
+
+
+/********
+Paso 5: Trabajamos nuestra segunda sección
+
+********/
+section#seccion-2 {
+  background-color: #EB7166;
+  text-align: center;
+  padding: 10rem 16rem;
+
+}
+
+div.cards-argumentos {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+div.cards-argumentos .card-1 {
+  width: 400px;
+  height: 400px;
+  background-image: url("../assets/img/card-01.jpg");
+  background-size: cover;
+  background-position: center;
+  
+
+}
+
+div.cards-argumentos .card-2 {
+  width: 400px;
+  height: 400px;
+  background-image: url("../assets/img/card-02.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+}
+
+div.cards-argumentos .card-3 {
+  width: 400px;
+  height: 400px;
+  background-image: url("../assets/img/card-03.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+div.cards-argumentos .card img {}
+
+div.cards-argumentos .card .card-contenido {}
+
+div.cards-argumentos .card .card-contenido h6 {}
+
+/* Efecto cuando le pasamos el mouse por arriba a la card*/
+div.cards-argumentos .card:hover {}
+
+
+
+section.seccion-form {
+  background-color: red;
+  display: flex;
+  height: 700px;
+  padding: 0px;
+
+}
+
+.gif-form {
+  width: 1600px;
+  background-image: url("../assets/img/form.gif");
+  background-size: 2000px;
+  background-position: top;
+}
+
+.caja-form {
+  background-color: #202020;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 20rem;
+}
+
+section.seccion-form #formulario-principal input[type="email"] {
+  width: 400px;
+  height: 3rem;
+  font-family: "Montserrat";
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+section.seccion-form #formulario-principal input[type="text"] {
+  width: 400px;
+  height: 3rem;
+  font-family: "Montserrat";
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+section.seccion-form #formulario-principal input[type="submit"] {
+  text-align: center;
+}
+
+
+section.seccion-form h2,
+section.seccion-form h4 {
+  color: #fff;
+  text-align: left;
+
+}
+
+section.seccion-form mark {
+  color: #fff;
+  background-color: #EB7166;
+}
+
+section.seccion-form #boton-form {
+  background-color: #6653FF;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+  border: hidden;
+
+}
+
+.grilla {}
+
+.grilla>*:not(.elemento-1) {}
+
+.grilla .elemento-1 {}
+
+.grilla .elemento-1 video {}
+
+.grilla .elemento-2 {}
+
+.grilla .elemento-3 {}
+
+.grilla .elemento-4 {}
+
+.grilla .elemento-5 {}
+
+/********
+Paso 6: Trabajamos nuestra tercera sección
+
+********/
+section#seccion-3 {}
+
+section#seccion-3 h1,
+section#seccion-3 h3 {}
+
+section#seccion-3 h3 {}
+
+section#seccion-3 .card-container {}
+
+
+section#seccion-3 .card-container .quote.card img {}
+
+section#seccion-3 .card-container .quote.card h6 span {}
+
+section#seccion-3 .card-container .quote.card p {}
+
+/********
+Paso 7: Trabajamos las secciones intermedias que son reiteración del form
+
+********/
+section.seccion-form.oscuro h3 {}
+
+section.seccion-form h3 {}
+
+section.seccion-form .miniform {}
+
+section.seccion-form .miniform input[type="submit"] {}
+
+section.seccion-form.oscuro input[type="submit"] {}
+
+section.seccion-form .miniform input[type="email"] {}
+
+section.seccion-form.oscuro input[type="email"] {}
+
+/********
+Paso 8: Trabajamos el footer
+
+********/
+footer {
+  height: 300px;
+  background-color: #EB7166;
+
+}
+
+footer h6 {
+  color: #fff;
+
+}
+
+footer .primera-fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer .primera-fila nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+footer .primera-fila nav ul li {
+  background-color: #202020;
+  border-radius: 100px;
+  padding: 1rem 1rem;
+
+}
+
+footer .primera-fila nav ul button {}
+
+footer nav.segunda-fila {}
+
+footer nav.segunda-fila ul {}
+
+footer .segunda-fila ul li {}
+
+footer .segunda-fila ul li:hover {}
+
+footer .segunda-fila ul li:hover a {}
+
+/********
+Paso 9: Trabajamos el form y el feedback
+
+********/
+
+.popup-contenedor.oculto {}
+
+.popup-contenedor {}
+
+.popup-contenedor .popup {}
+
+.popup-contenedor .popup h4 {}
+
+.popup-contenedor .popup p {
+  ;
+}
+
+.popup-contenedor .popup p span {}
+
+.popup-contenedor .popup h3 {}
+
+.popup-contenedor .popup .cerrar {}
+
+.popup-contenedor .popup .cerrar:hover {}
+
+#formulario-principal {}
+
+#formulario-principal input,
+#formulario-principal select,
+#formulario-principal option {}
+
+#formulario-principal input {}
+
+#formulario-principal label {}
+
+#formulario-principal>.form-row:not(:last-child) {}
+
+
+/********
+Paso 10: Trabajamos para que sea responsive
+
+********/
