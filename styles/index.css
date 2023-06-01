@@ -341,6 +341,10 @@ section.seccion-form #boton-form {
 
 }
 
+#feedback{
+  display: none;
+}
+
 .grilla {}
 
 .grilla>*:not(.elemento-1) {}
@@ -488,3 +492,64 @@ Paso 9: Trabajamos el form y el feedback
 Paso 10: Trabajamos para que sea responsive
 
 ********/
+
+@media screen and (min-width: 501px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+
+  html {
+    font-size: 7.5px;
+  }
+
+  section#portada {
+    min-height: 100vh;
+    height: auto;
+    text-align: left;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+  }
+
+  section#portada button {
+    width: calc(100vw - 8rem);
+    
+  
+  }
+  
+  section#seccion-1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    
+  }
+
+  section#seccion-1 img{
+    width: calc(100vw - 8rem) ;
+    
+  }
+
+  section#seccion-2 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  
+    
+  }
+
+  div.cards-argumentos {
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+
+
+
+}

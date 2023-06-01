@@ -22,7 +22,8 @@ $(document).ready(() => {
   });
 });
 
-function abrirPopupForm() {
+function mostrarFeedback() {
+  document.getElementById('feedback').style.display = 'block';
 
 }
 
