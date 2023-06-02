@@ -43,7 +43,7 @@ html,
 body {
   font-size: 10px;
   background-color: #F2E694;
-  
+
 }
 
 * {
@@ -86,7 +86,7 @@ h4 {
 }
 
 h5 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h6 {
@@ -102,20 +102,17 @@ a {
 Paso 1: Definimos la estructura básica
 
 ********/
-/* Barra de navegación superior */
-header {}
 
 /* Cada sección de la landing */
 section {
-  
-  padding: 3rem 12rem;
+  padding: 8rem 20rem;
 
 }
 
 /* Únicamente la portada tendrá un alto excepcional, para que ocupe toda la pantalla:
 calculamos el total del alto de la pantalla menos lo que mide el header */
 section#portada {
-  height: 1080px;
+  height: 100vh;
   background-image: url("../assets/img/portada-01.webp");
   background-size: cover;
   background-position: center;
@@ -141,6 +138,8 @@ section#portada button {
   cursor: pointer;
   border: hidden;
   margin-top: 4rem;
+  width: 30rem;
+  height: 5rem;
 
 }
 
@@ -229,7 +228,7 @@ div.cards-argumentos {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+
 
 
 }
@@ -240,7 +239,7 @@ div.cards-argumentos .card-1 {
   background-image: url("../assets/img/card-01.jpg");
   background-size: cover;
   background-position: center;
-  
+
 
 }
 
@@ -278,13 +277,14 @@ div.cards-argumentos .card:hover {}
 section.seccion-form {
   background-color: red;
   display: flex;
+  flex-direction: row;
   height: 700px;
   padding: 0px;
 
 }
 
 .gif-form {
-  width: 1600px;
+  width: calc(100vw - 1rem);
   background-image: url("../assets/img/form.gif");
   background-size: 2000px;
   background-position: top;
@@ -292,14 +292,14 @@ section.seccion-form {
 
 .caja-form {
   background-color: #202020;
-  padding-top: 10rem;
-  padding-left: 10rem;
+  padding-top: 12rem;
+  padding-left: 20rem;
   padding-right: 20rem;
 }
 
 section.seccion-form #formulario-principal input[type="email"] {
-  width: 400px;
-  height: 3rem;
+  width: calc(100vw/2);
+  height: 5rem;
   font-family: "Montserrat";
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -307,8 +307,8 @@ section.seccion-form #formulario-principal input[type="email"] {
 }
 
 section.seccion-form #formulario-principal input[type="text"] {
-  width: 400px;
-  height: 3rem;
+  width: calc(100vw/2);
+  height: 5rem;
   font-family: "Montserrat";
   margin-top: 2rem;
   padding-left: 2rem;
@@ -341,7 +341,7 @@ section.seccion-form #boton-form {
 
 }
 
-#feedback{
+#feedback {
   display: none;
 }
 
@@ -438,55 +438,6 @@ footer .primera-fila nav ul li {
 
 }
 
-footer .primera-fila nav ul button {}
-
-footer nav.segunda-fila {}
-
-footer nav.segunda-fila ul {}
-
-footer .segunda-fila ul li {}
-
-footer .segunda-fila ul li:hover {}
-
-footer .segunda-fila ul li:hover a {}
-
-/********
-Paso 9: Trabajamos el form y el feedback
-
-********/
-
-.popup-contenedor.oculto {}
-
-.popup-contenedor {}
-
-.popup-contenedor .popup {}
-
-.popup-contenedor .popup h4 {}
-
-.popup-contenedor .popup p {
-  ;
-}
-
-.popup-contenedor .popup p span {}
-
-.popup-contenedor .popup h3 {}
-
-.popup-contenedor .popup .cerrar {}
-
-.popup-contenedor .popup .cerrar:hover {}
-
-#formulario-principal {}
-
-#formulario-principal input,
-#formulario-principal select,
-#formulario-principal option {}
-
-#formulario-principal input {}
-
-#formulario-principal label {}
-
-#formulario-principal>.form-row:not(:last-child) {}
-
 
 /********
 Paso 10: Trabajamos para que sea responsive
@@ -498,6 +449,7 @@ Paso 10: Trabajamos para que sea responsive
     display: none;
   }
 }
+
 @media screen and (max-width: 500px) {
   .desktop-only {
     display: none;
@@ -518,38 +470,78 @@ Paso 10: Trabajamos para que sea responsive
 
   section#portada button {
     width: calc(100vw - 8rem);
-    
-  
+
+
   }
-  
+
   section#seccion-1 {
     display: flex;
     flex-direction: column;
     padding-left: 4rem;
     padding-right: 4rem;
     text-align: center;
-    
+
   }
 
-  section#seccion-1 img{
-    width: calc(100vw - 8rem) ;
-    
+  section#seccion-1 img {
+    width: calc(100vw - 8rem);
+
   }
 
   section#seccion-2 {
     padding-left: 4rem;
     padding-right: 4rem;
-  
-    
+
+
   }
 
   div.cards-argumentos {
     display: flex;
     flex-direction: column;
-    
-  
+
+
   }
 
+  section.seccion-form {
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    background-image: url("../assets/img/form.gif");
+    background-size: 2000px;
+    background-position: top;
+
+  }
+
+  .gif-form {
+    display: none;
+  }
+
+  .caja-form {
+    
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    padding-top: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100vw;
+  }
+
+  section.seccion-form #formulario-principal input[type="email"] {
+    width: calc(100vw - 8rem);
+  }
+  
+  section.seccion-form #formulario-principal input[type="text"] {
+    width: calc(100vw - 8rem);
+    
+  }
+
+
+
+
+  section.seccion-form #formulario-principal input[type="submit"] {
+    text-align: center;
+    width: calc(100vw - 8rem);
+  }
 
 
 }
