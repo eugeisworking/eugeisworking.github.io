@@ -3,21 +3,11 @@
 $(document).ready(() => {
   console.log("JQuery Cargado");
 
-  // Cuando hacemos click en "suscribirme" de los form abreviados, abrimos el popup del form completo
-  $(".miniform-submit").click(() => {
-    abrirPopupForm();
-    trasladarMailDeMiniformAFormCompleto();
-  });
-
-  // Cuando hacemos click en la cruz de los popup, los cerramos
-  $(".cerrar").click(() => {
-    cerrarPopup();
-  });
 
   // Cuando enviamos el formulario completo, mostramos el feedback
   $("#formulario-principal").on("submit", (e) => {
     e.preventDefault(); // Esta linea es importante para evitar que la página se recargue al enviar le formulario
-    abrirFeedback();
+    mostrarFeedback();
     trasladarDatosDelFormCompletoAFeedback();
   });
 });
@@ -47,7 +37,7 @@ function trasladarDatosDelFormCompletoAFeedback() {
   const spanNombre = $("#dato-nombre");
   const spanEmail = $("#dato-email");
 
-  spanNombre.html(nombre + " " + apellido);
+  spanNombre.html(nombre);
   spanEmail.html(email);
 }
 

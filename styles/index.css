@@ -62,23 +62,26 @@ h3 {
 
 }
 
+h5{
+  font-family: "Tungsten";
+}
+
 h4,
-h5,
 h6 {
   font-family: "Montserrat";
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -126,6 +129,12 @@ section#portada h5 {
   text-align: left;
 }
 
+section#portada h1, h3, h4{
+  padding-top: 2.5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
 section#portada mark {
   background-color: #EB7166;
 }
@@ -135,66 +144,15 @@ section#portada button {
   color: #fff;
   padding: 1rem 2rem;
   font-family: "Montserrat-Bold";
+  font-size: 2.5rem;
   cursor: pointer;
   border: hidden;
   margin-top: 4rem;
   width: 30rem;
-  height: 5rem;
+  height: 6rem;
 
 }
 
-
-
-/* Únicamente las secciones que ocupen posiciones impares dentro de su contenedor, tendrán otro fondo.
-Esto sirve para que nos quede una sección de un color, luego la siguiente de otro, luego la siguiente igual a la primera
-y así suscesivamente */
-section:nth-child(odd) {}
-
-/* Únicamente las secciones que lleven la clase seccion-form serán menos altas */
-
-
-footer {}
-
-/********
-Paso 2: Trabajamos nuestro header
-
-********/
-header nav {}
-
-.logo-container {}
-
-header nav img {}
-
-header nav ul {}
-
-header nav ul li {}
-
-header nav ul li button {}
-
-/********
-Paso 3: Trabajamos nuestra portada
-
-********/
-section#portada {}
-
-section#portada h1,
-h4 {}
-
-div.portada-container {}
-
-div.portada-izquierda {}
-
-div.portada-izquierda .separador {}
-
-div.portada-izquierda .portada-miniform {}
-
-div.portada-izquierda .portada-miniform input[type="submit"] {}
-
-div.portada-izquierda .portada-miniform input[type="email"] {}
-
-div.portada-derecha {}
-
-div.portada-derecha img {}
 
 /********
 Paso 4: Trabajamos nuestra primera sección
@@ -202,11 +160,28 @@ Paso 4: Trabajamos nuestra primera sección
 ********/
 section#seccion-1 {
   display: flex;
+  flex-direction: row;
+  width: 100vw;
 
 }
 
 section#seccion-1 h2 {
   color: #EB7166;
+  padding-top: 10rem;
+
+}
+
+section#seccion-1 h4 {
+  padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(100vw/3);
+  padding-bottom: 4rem;
+
+}
+
+section#seccion-1 img {
+  width: calc(100vw/3);
 
 }
 
@@ -216,11 +191,14 @@ Paso 5: Trabajamos nuestra segunda sección
 
 ********/
 section#seccion-2 {
+  width: 100vw;
   background-color: #EB7166;
   text-align: center;
   padding: 10rem 16rem;
+  color: #fff;
 
 }
+
 
 div.cards-argumentos {
   margin-top: 4rem;
@@ -263,15 +241,6 @@ div.cards-argumentos .card-3 {
 
 }
 
-div.cards-argumentos .card img {}
-
-div.cards-argumentos .card .card-contenido {}
-
-div.cards-argumentos .card .card-contenido h6 {}
-
-/* Efecto cuando le pasamos el mouse por arriba a la card*/
-div.cards-argumentos .card:hover {}
-
 
 
 section.seccion-form {
@@ -297,13 +266,14 @@ section.seccion-form {
   padding-right: 20rem;
 }
 
-section.seccion-form #formulario-principal input[type="email"] {
+section.seccion-form #formulario-principal input[type="text"],input[type="email"] {
   width: calc(100vw/2);
   height: 5rem;
   font-family: "Montserrat";
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding-left: 2rem;
+  font-size: 2rem;
 }
 
 section.seccion-form #formulario-principal input[type="text"] {
@@ -312,10 +282,12 @@ section.seccion-form #formulario-principal input[type="text"] {
   font-family: "Montserrat";
   margin-top: 2rem;
   padding-left: 2rem;
+  font-size: 2rem;
 }
 
 section.seccion-form #formulario-principal input[type="submit"] {
   text-align: center;
+  height: 5rem;
 }
 
 
@@ -323,6 +295,7 @@ section.seccion-form h2,
 section.seccion-form h4 {
   color: #fff;
   text-align: left;
+  padding-left: 0;
 
 }
 
@@ -331,13 +304,17 @@ section.seccion-form mark {
   background-color: #EB7166;
 }
 
+
 section.seccion-form #boton-form {
   background-color: #6653FF;
   color: #fff;
   padding: 1rem 2rem;
   font-family: "Montserrat-Bold";
+  font-size: 2.5rem;
   cursor: pointer;
   border: hidden;
+  width: 25rem;
+  height: 6rem;
 
 }
 
@@ -345,59 +322,7 @@ section.seccion-form #boton-form {
   display: none;
 }
 
-.grilla {}
 
-.grilla>*:not(.elemento-1) {}
-
-.grilla .elemento-1 {}
-
-.grilla .elemento-1 video {}
-
-.grilla .elemento-2 {}
-
-.grilla .elemento-3 {}
-
-.grilla .elemento-4 {}
-
-.grilla .elemento-5 {}
-
-/********
-Paso 6: Trabajamos nuestra tercera sección
-
-********/
-section#seccion-3 {}
-
-section#seccion-3 h1,
-section#seccion-3 h3 {}
-
-section#seccion-3 h3 {}
-
-section#seccion-3 .card-container {}
-
-
-section#seccion-3 .card-container .quote.card img {}
-
-section#seccion-3 .card-container .quote.card h6 span {}
-
-section#seccion-3 .card-container .quote.card p {}
-
-/********
-Paso 7: Trabajamos las secciones intermedias que son reiteración del form
-
-********/
-section.seccion-form.oscuro h3 {}
-
-section.seccion-form h3 {}
-
-section.seccion-form .miniform {}
-
-section.seccion-form .miniform input[type="submit"] {}
-
-section.seccion-form.oscuro input[type="submit"] {}
-
-section.seccion-form .miniform input[type="email"] {}
-
-section.seccion-form.oscuro input[type="email"] {}
 
 /********
 Paso 8: Trabajamos el footer
@@ -461,17 +386,38 @@ Paso 10: Trabajamos para que sea responsive
 
   section#portada {
     min-height: 100vh;
-    height: auto;
+    width: 100vw;
     text-align: left;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
 
   }
 
-  section#portada button {
-    width: calc(100vw - 8rem);
+  section#portada button{
+    width: calc(100vw - 4rem);
+  }
+
+  section#portada h1, h3, h4{
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section#portada h5{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 10rem;
+    
+  }
 
 
+
+  h1, h2{
+    font-size: 5rem;
+  }
+
+  h3{
+    font-size: 3rem;
   }
 
   section#seccion-1 {
@@ -480,17 +426,29 @@ Paso 10: Trabajamos para que sea responsive
     padding-left: 4rem;
     padding-right: 4rem;
     text-align: center;
+    align-items: center;
 
   }
 
+  div.columna-1 {
+    width: 100vw;
+
+  }
+
+  section#seccion-1 h4{
+    width: 100vw;
+
+  }
+
+
   section#seccion-1 img {
-    width: calc(100vw - 8rem);
+    width: calc(100vw - 4rem);
 
   }
 
   section#seccion-2 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 
   }
@@ -541,6 +499,41 @@ Paso 10: Trabajamos para que sea responsive
   section.seccion-form #formulario-principal input[type="submit"] {
     text-align: center;
     width: calc(100vw - 8rem);
+  }
+
+  footer {
+    width: 100vw;
+    background-color: #EB7166;
+  
+  }
+
+  footer .primera-fila {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  
+  footer .primera-fila nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  
+  }
+  
+  footer .primera-fila nav ul li {
+    background-color: #202020;
+    border-radius: 100px;
+    padding: 1rem 1rem;
+  
+  }
+  footer .primera-fila img{
+    height: 4rem;
+  
   }
 
 
