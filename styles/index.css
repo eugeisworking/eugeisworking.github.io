@@ -266,6 +266,17 @@ section.seccion-form {
   padding-right: 20rem;
 }
 
+.feedback {
+  background-color: #6653FF;
+  padding-top: 12rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.feedback h1{
+  color: #fff;
+}
+
 section.seccion-form #formulario-principal input[type="text"],input[type="email"] {
   width: calc(100vw/2);
   height: 5rem;
@@ -362,6 +373,8 @@ footer .primera-fila nav ul li {
   padding: 1rem 1rem;
 
 }
+
+
 
 
 /********
@@ -483,6 +496,14 @@ Paso 10: Trabajamos para que sea responsive
     padding-right: 4rem;
     width: 100vw;
   }
+
+  .feedback {
+    background-color: #6653FF;
+    padding-top: 12rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
 
   section.seccion-form #formulario-principal input[type="email"] {
     width: calc(100vw - 8rem);
