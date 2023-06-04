@@ -43,6 +43,7 @@ html,
 body {
   font-size: 10px;
   background-color: #F2E694;
+  scroll-behavior: smooth;
 
 }
 
@@ -150,6 +151,7 @@ section#portada button {
   margin-top: 4rem;
   width: 30rem;
   height: 6rem;
+  
 
 }
 
