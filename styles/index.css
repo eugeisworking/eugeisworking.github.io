@@ -194,6 +194,7 @@ section#seccion-2 {
   width: 100vw;
   background-color: #EB7166;
   text-align: center;
+  align-items: center;
   padding: 10rem 16rem;
   color: #fff;
 
@@ -201,46 +202,87 @@ section#seccion-2 {
 
 
 div.cards-argumentos {
-  margin-top: 4rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  
+  
+}
 
+div.cards-argumentos h3{
+  color: #fff;
+  font-size: 4rem;
+  padding-top: 4rem;
+  padding: 4rem;
+  width: 400px;
+}
 
+.cards-argumentos h4{
+  padding: 0rem 3rem;
 
 }
 
-div.cards-argumentos .card-1 {
-  width: 400px;
-  height: 400px;
+
+.card-1 {
   background-image: url("../assets/img/card-01.jpg");
   background-size: cover;
   background-position: center;
-
+  overflow: hidden;
+  text-align: left;
+  margin: 2rem 2rem;
 
 }
 
-div.cards-argumentos .card-2 {
+.card-contenido1{
+  background-color:rgba(0, 0, 0, 0.7);
   width: 400px;
   height: 400px;
+  
+}
+
+/*
+.card-1:hover .card-contenido1{
+  left: 15rem;
+  
+}
+*/
+
+.card-2 {
+  
   background-image: url("../assets/img/card-02.jpg");
   background-size: cover;
   background-position: center;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  overflow: hidden;
+  text-align: left;
+  margin: 2rem 2rem;
 
 }
 
-div.cards-argumentos .card-3 {
+.card-contenido2{
+  background-color:rgba(0, 0, 0, 0.7);
   width: 400px;
   height: 400px;
+  
+}
+
+.card-3 {
   background-image: url("../assets/img/card-03.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  text-align: left;
+  margin: 2rem 2rem;
+  
 
+}  
+
+.card-contenido3{
+  background-color:rgba(0, 0, 0, 0.7);
+  width: 400px;
+  height: 400px;
+  
 }
-
 
 
 section.seccion-form {
@@ -470,7 +512,6 @@ Paso 10: Trabajamos para que sea responsive
     display: flex;
     flex-direction: column;
 
-
   }
 
   section.seccion-form {
@@ -481,6 +522,25 @@ Paso 10: Trabajamos para que sea responsive
     background-size: 2000px;
     background-position: top;
 
+  }
+
+  .card-1{
+    margin: 4rem 4rem;
+    width: calc(100vw- 4rem);
+    
+  }
+
+  .card-2{
+    margin: 4rem 4rem;
+    
+  }
+
+  .card-3{
+
+    margin-bottom: 8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
   }
 
   .gif-form {
